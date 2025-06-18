@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | João Testa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #7f8a95;
+    }
+    header {
+      background: #002512;
+      color: white;
+      padding: 60px 0;
+    }
+    .badge {
+      font-size: 1rem;
+      margin: 0 5px;
+    }
+    footer {
+      background-color: #002512;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .foto-joao {
+      width: 220px;
+      height: auto;
+      border: 4px solid white;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-body .btn {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="text-center text-md-start mb-4 mb-md-0">
+        <h1 class="display-5 fw-bold">João Testa</h1>
+        <p class="lead">Estudante do Ensino Médio | Desenvolvedor Iniciante</p>
+        <p>Tenho familiaridade com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, e estou trilhando um caminho acadêmico voltado para <strong>Química</strong>, <strong>Biologia</strong> e <strong>Medicina Veterinária</strong>.</p>
+        <div class="mt-3">
+          <span class="badge bg-primary">HTML</span>
+          <span class="badge bg-success">CSS</span>
+          <span class="badge bg-warning text-dark">JavaScript</span>
+        </div>
+      </div>
+
+      <div>
+        <img src="img/joao.png" alt="João Testa" class="img-fluid foto-joao">
+      </div>
+    </div>
+  </header>
+
+  <!-- PRINCIPAIS PROJETOS -->
+  <main class="container mt-5">
+    <h2 class="text-center mb-4">Projetos em Destaque</h2>
+    <div class="row g-4">
+
+      <!-- Projeto 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/estrelas.png" class="card-img-top" alt="Projeto Bolinhas">
+          <div class="card-body">
+            <h5 class="card-title">Projeto Bolinhas Interativas (p5.js)</h5>
+            <p class="card-text">Criado com a biblioteca p5.js, esse projeto permite gerar bolinhas que se multiplicam e mudam de cor ao clicar. Trabalha conceitos de interatividade e animação em JavaScript.</p>
+            <a class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal1">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/estrelas.png" class="card-img-top" alt="Projeto IA">
+          <div class="card-body">
+            <h5 class="card-title">Recomendador de Músicas por Personalidade</h5>
+            <p class="card-text">Projeto feito com HTML, CSS e JavaScript que recomenda músicas conforme o tipo de personalidade escolhida. Um experimento simples com lógica de decisão e DOM.</p>
+            <a class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal2">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/estrelas.png" class="card-img-top" alt="Projeto Ping Pong">
+          <div class="card-body">
+            <h5 class="card-title">Jogo de Ping Pong (p5.js)</h5>
+            <p class="card-text">Um jogo clássico de ping pong desenvolvido com p5.js. Trabalhei colisões, movimentação de raquetes e pontuação, tudo com interação em tempo real usando JavaScript.</p>
+            <a class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal3">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAIS DOS PROJETOS -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto Bolinhas Interativas (p5.js)</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Projeto desenvolvido com foco em eventos de clique, animações e interações visuais usando p5.js. As bolinhas se multiplicam, mudam de cor e se movimentam dinamicamente.</p>
+          <img src="img/bolitas.png" class="img-fluid mt-3" alt="Imagem do projeto">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/atomojoao/projeto-2025-B" class="btn btn-outline-secondary">Código no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Recomendador de Músicas por Personalidade</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Criei esse projeto usando HTML, CSS e JavaScript, desenvolvendo um algoritmo que sugere músicas com base na personalidade ou humor do usuário. Explora lógica condicional e interação com botões.</p>
+          <img src="img/Captura de tela 2025-06-18 005531.png" class="img-fluid mt-3" alt="Imagem do projeto">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/atomojoao/musica-2025" class="btn btn-outline-primary">Ver Projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Jogo de Ping Pong (p5.js)</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esse jogo de ping pong foi desenvolvido em p5.js. Conta com movimentação das raquetes pelos jogadores, física de colisão da bolinha, placar e reinício da rodada. Simples e divertido para praticar lógica e interatividade com teclado.</p>
+          <img src="img/ping pong.png" class="img-fluid mt-3" alt="Imagem do projeto">
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001125662189sp/sketches/it-K9m_T0" class="btn btn-outline-primary">Ver Projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <h5 class="mb-3">Entre em contato</h5>
+    <a href="https://github.com/atomojoao" class="text-white text-decoration-none me-2"><i class="bi bi-github"></i> GitHub</a>
+    <p class="mt-4 mb-0">© 2025 João Testa</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
